@@ -1,8 +1,10 @@
+import logo from '../assets/images/Logo.svg';
+
 const Header = () => {
   return (
     <>
       <a href=' # '>
-        <img src='../assets/images/Logo.svg' alt='little lemon logo' />
+        <img src={logo} alt='Little Lemon Logo' />
       </a>
     </>
   );
