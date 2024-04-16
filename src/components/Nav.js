@@ -1,6 +1,6 @@
 const Nav = () => {
   return (
-    <>
+    <nav>
       <ul>
         <li>
           <a href=' # '>HOME</a>
@@ -21,12 +21,8 @@ const Nav = () => {
         <li>
           <a href=' # '>ORDER</a>
         </li>
-
-        <li>
-          <a href=' # '>LOGIN</a>
-        </li>
       </ul>
-    </>
+    </nav>
   );
 };
 
