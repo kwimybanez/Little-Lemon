@@ -1,8 +1,8 @@
 const Main = () => {
   return (
-    <>
-      <section>Main Body</section>
-    </>
+    <section>
+      <h3>Main Body</h3>
+    </section>
   );
 };
 

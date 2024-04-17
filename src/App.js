@@ -1,18 +1,34 @@
 import './App.css';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Main from './components/Main';
-import Nav from './components/Nav';
-import Reservations from './pages/Reservations';
+import HomePage from './pages/HomePage.js';
+import AboutPage from './pages/AboutPage.js';
+import BookPage from './pages/BookPage.js';
+import MenuPage from './pages/MenuPage.js';
+import OrderPage from './pages/OrderPage.js';
+
+import NavBar from './components/NavBar.js';
+import Footer from './components/Footer.js';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <Header />
-      <Nav />
-      <Main />
-      <Reservations />
-      <Footer />
+      <BrowserRouter>
+        <NavBar />
+        <main>
+          <Routes>
+            <Route path='/' element={<HomePage />} />
+            <Route path='/about' element={<AboutPage />} />
+            <Route path='/menu' element={<MenuPage />} />
+            <Route path='/booking' element={<BookPage />} />
+            <Route path='/order' element={<OrderPage />} />
+          </Routes>
+        </main>
+
+        <footer>
+          <Footer />
+        </footer>
+      </BrowserRouter>
     </>
   );
 }
