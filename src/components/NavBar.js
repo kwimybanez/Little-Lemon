@@ -29,17 +29,17 @@ const NavBar = () => {
   };
 
   return (
-    <nav className='mx-auto max-w-7xl px-2 sm:px-2 lg:px-8'>
-      <div className='relative px-10 py-4 flex justify-between items-center'>
+    <nav className='mx-auto max-w-7xl sm:px-3 md:px-6 lg:px-8'>
+      <div className='relative px-6 py-4 flex justify-between items-center'>
         <NavLink to='/'>
           <img className='w-60' src={Logo} alt='Little Lemon Logo' />
         </NavLink>
 
         {/* Navigation Menu Icon */}
-        <div className='lg:hidden z-40 rounded-xl cursor-pointer transition-duration-300'>
+        <div className='lg:hidden z-40 rounded-xl cursor-pointer transition-duration-600'>
           <button
             onClick={toggleMenu}
-            className='navbar-burger flex items-center text-neutral-600 hover:text-black p-3'>
+            className='navbar-burger flex items-center hover:bg-neutral-50 rounded-xl text-neutral-600 hover:text-black p-3'>
             {menuButton({ isActive: isMobileMenuOpen })}
           </button>
         </div>
@@ -47,7 +47,7 @@ const NavBar = () => {
         {/* Mobile Backdrop */}
         {isMobileMenuOpen && (
           <div
-            className='lg:hidden z-30 navbar-backdrop fixed inset-0 bg-neutral-800 opacity-25'
+            className='lg:hidden z-30 navbar-backdrop fixed inset-0 bg-neutral-800 opacity-35'
             onClick={toggleMenu}></div>
         )}
 
@@ -77,10 +77,10 @@ const NavBar = () => {
 
             {/* Mobile Booking CTA */}
 
-            <li className='mt-20'>
+            <li className='mt-12'>
               <NavLink
                 to='/booking'
-                className='flex items-center justify-center p-3 text-md font-semibold bg-lemon text-black  hover:bg-yellow-300 hover:text-neutral-600 rounded-xl'>
+                className='flex items-center justify-center p-3 text-md font-semibold bg-lemon text-black  hover:bg-yellow-300  rounded-xl'>
                 Book a Table
               </NavLink>
             </li>
@@ -114,7 +114,7 @@ const NavBar = () => {
           <li>
             <NavLink
               to='/booking'
-              className='py-2 px-6 bg-lemon hover:bg-yellow-300 text-md text-black hover:text-neutral-600 font-bold rounded-xl transition duration-300'>
+              className='drop-shadow-md py-3 px-6 bg-lemon hover:bg-yellow-300 text-md text-black  font-bold rounded-xl transition duration-300'>
               Book a Table
             </NavLink>
           </li>

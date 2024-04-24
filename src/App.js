@@ -16,15 +16,13 @@ function App() {
       <BrowserRouter>
         <NavBar />
 
-        <main>
-          <Routes>
-            <Route path='/' element={<HomePage />} />
-            <Route path='/about' element={<AboutPage />} />
-            <Route path='/menu' element={<MenuPage />} />
-            <Route path='/booking' element={<BookPage />} />
-            <Route path='/order' element={<OrderPage />} />
-          </Routes>
-        </main>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/about' element={<AboutPage />} />
+          <Route path='/menu' element={<MenuPage />} />
+          <Route path='/booking' element={<BookPage />} />
+          <Route path='/order' element={<OrderPage />} />
+        </Routes>
 
         <Footer />
       </BrowserRouter>
