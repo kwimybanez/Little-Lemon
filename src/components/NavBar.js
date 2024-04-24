@@ -39,7 +39,7 @@ const NavBar = () => {
         <div className='lg:hidden z-40 rounded-xl cursor-pointer transition-duration-600'>
           <button
             onClick={toggleMenu}
-            className='navbar-burger flex items-center hover:bg-neutral-50 rounded-xl text-neutral-600 hover:text-black p-3'>
+            className='navbar-burger flex items-center hover:bg-neutral-100 rounded-xl text-neutral-600 hover:text-black p-3'>
             {menuButton({ isActive: isMobileMenuOpen })}
           </button>
         </div>
