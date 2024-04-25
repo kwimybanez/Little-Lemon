@@ -1,6 +1,8 @@
+const flowbite = require('flowbite-react/tailwind');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: ['./src/**/*.{js,jsx,ts,tsx}', flowbite.content()],
   theme: {
     extend: {
       fontFamily: {
@@ -10,7 +12,7 @@ module.exports = {
       colors: {
         secondary: 'rgba(73, 94, 87, 1)',
         lemon: 'rgba(244, 206, 20, 1)',
-        highlighted: 'rgba(251, 218, 187, 1)',
+        highlighted: 'rgba(247, 221, 90, 1)',
       },
       screens: {
         sm: '480px',
@@ -20,5 +22,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [flowbite.plugin()],
 };

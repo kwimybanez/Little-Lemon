@@ -3,10 +3,9 @@ import AboutPage from './pages/AboutPage.js';
 import BookPage from './pages/BookPage.js';
 import MenuPage from './pages/MenuPage.js';
 import OrderPage from './pages/OrderPage.js';
+import FooterSection from './components/FooterSection.js';
 
 import NavBar from './components/NavBar.js';
-
-import Footer from './components/Footer.js';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -24,7 +23,7 @@ function App() {
           <Route path='/order' element={<OrderPage />} />
         </Routes>
 
-        <Footer />
+        <FooterSection />
       </BrowserRouter>
     </>
   );

@@ -1,11 +1,23 @@
-import React from 'react';
-import DatePicker from '../components/DatePicker';
+// import React from 'react';
+// import DatePicker from '../components/DatePicker';
+
+// const BookPage = () => {
+//   return (
+//     <>
+//       <DatePicker />
+//     </>
+//   );
+// };
+
+// export default BookPage;
+
+import { Button } from 'flowbite-react';
 
 const BookPage = () => {
   return (
-    <>
-      <DatePicker />
-    </>
+    <div>
+      <Button>Click me</Button>
+    </div>
   );
 };
 

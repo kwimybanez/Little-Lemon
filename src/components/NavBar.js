@@ -80,7 +80,7 @@ const NavBar = () => {
             <li className='mt-12'>
               <NavLink
                 to='/booking'
-                className='flex items-center justify-center p-3 text-md font-semibold bg-lemon text-black  hover:bg-yellow-300  rounded-xl'>
+                className='flex items-center justify-center p-3 text-md font-semibold bg-lemon text-black hover:bg-highlighted  rounded-xl'>
                 Book a Table
               </NavLink>
             </li>
@@ -114,7 +114,7 @@ const NavBar = () => {
           <li>
             <NavLink
               to='/booking'
-              className='drop-shadow-md py-3 px-6 bg-lemon hover:bg-yellow-300 text-md text-black  font-bold rounded-xl transition duration-300'>
+              className='drop-shadow-md py-3 px-6 bg-lemon hover:bg-highlighted text-md text-black  font-bold rounded-xl transition duration-300'>
               Book a Table
             </NavLink>
           </li>
