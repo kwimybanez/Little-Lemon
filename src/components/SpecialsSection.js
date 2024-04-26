@@ -125,8 +125,8 @@ const SpecialsSection = () => {
                   </h5>
                   <p className='text-sm'>
                     Our very own signature Shrimp Scampi. Using only fresh locally grown jumbo
-                    shrimp autéed in a rich blend of butter infused with fresh garlic, shallots, and
-                    a splash of white wine.
+                    shrimp sautéed in a rich blend of butter infused with fresh garlic, shallots,
+                    and a splash of white wine.
                   </p>
                 </Link>
                 <div class='flex items-center mt-2.5 mb-5'>
