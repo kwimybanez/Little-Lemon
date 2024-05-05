@@ -18,15 +18,19 @@ const HeroSection = () => {
           </p>
           <div className='pb-12'>
             <NavLink to='/booking'>
-              <button className='drop-shadow-md py-2 px-6 bg-lemon hover:bg-highlighted text-md text-black font-bold rounded-xl transition duration-300 shadow-2xl'>
+              <button className='drop-shadow-md py-2 px-6 w-full md:w-40 bg-lemon hover:bg-highlighted text-md text-black font-bold rounded-xl transition duration-300 shadow-2xl'>
                 Book a Table
               </button>
             </NavLink>
           </div>
         </div>
         <div className='md:pr-6 mt-4 mx-auto md:flex justify-end sm:hidden'>
-          <div className='object-cover h-64 w-80'>
-            <img className='min-h-min rounded-xl' src={HeroImage} alt='Serving delicious dish' />
+          <div className='h-64 w-80'>
+            <img
+              className='rounded-xl hover:scale-105 transition duration-500'
+              src={HeroImage}
+              alt='Serving delicious dish'
+            />
           </div>
         </div>
       </div>

@@ -34,17 +34,21 @@ const FooterSection = () => {
               </h2>
               <ul className='text-gray-500 dark:text-gray-400 font-medium'>
                 <li className='mb-4'>
-                  <Link to='https://maps.app.goo.gl/Ztiyt7dHTVajvuF98' className='hover:underline'>
-                    Address
+                  <Link
+                    to='https://maps.app.goo.gl/Ztiyt7dHTVajvuF98'
+                    className='hover:underline hover:text-gray-900'>
+                    Location
                   </Link>
                 </li>
                 <li className='mb-4'>
-                  <Link to='mailto:littlelemon@email.com' className='hover:underline'>
+                  <Link
+                    to='mailto:littlelemon@email.com'
+                    className='hover:underline hover:text-gray-900'>
                     Email
                   </Link>
                 </li>
                 <li>
-                  <Link to='#' className='hover:underline'>
+                  <Link to='#' className='hover:underline hover:text-gray-900'>
                     Phone No
                   </Link>
                 </li>
@@ -58,17 +62,23 @@ const FooterSection = () => {
               </h2>
               <ul className='text-gray-500 dark:text-gray-400 font-medium'>
                 <li className='mb-4'>
-                  <Link to='https://www.facebook.com' className='hover:underline '>
+                  <Link
+                    to='https://www.facebook.com'
+                    className='hover:underline hover:text-gray-900'>
                     Facebook
                   </Link>
                 </li>
                 <li className='mb-4'>
-                  <Link to='https://www.instagram.com' className='hover:underline'>
+                  <Link
+                    to='https://www.instagram.com'
+                    className='hover:underline hover:text-gray-900'>
                     Instagram
                   </Link>
                 </li>
                 <li>
-                  <Link to='https://www.twitter.com' className='hover:underline'>
+                  <Link
+                    to='https://www.twitter.com'
+                    className='hover:underline hover:text-gray-900'>
                     Twitter
                   </Link>
                 </li>
@@ -82,12 +92,12 @@ const FooterSection = () => {
               </h2>
               <ul className='text-gray-500 dark:text-gray-400 font-medium'>
                 <li className='mb-4'>
-                  <Link to='#' className='hover:underline'>
+                  <Link to='#' className='hover:underline hover:text-gray-900'>
                     Booking Policy
                   </Link>
                 </li>
                 <li>
-                  <Link to='#' className='hover:underline'>
+                  <Link to='#' className='hover:underline hover:text-gray-900'>
                     Terms &amp; Conditions
                   </Link>
                 </li>
@@ -99,12 +109,8 @@ const FooterSection = () => {
         {/* Copyrights & Social Strip */}
         <hr className='my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8' />
         <div className='sm:flex sm:items-center sm:justify-between'>
-          <span className='text-sm text-gray-500 sm:text-center dark:text-gray-400'>
-            © 2024{' '}
-            <NavLink to='/' className='hover:underline'>
-              Little Lemon Restaurant
-            </NavLink>
-            . All Rights Reserved.
+          <span className='text-sm text-gray-500  dark:text-gray-400'>
+            © 2024 Little Lemon Restaurant. All Rights Reserved.
           </span>
           <div className='flex mt-4 sm:justify-center sm:mt-0'>
             <Link

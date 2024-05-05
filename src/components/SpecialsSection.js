@@ -25,10 +25,10 @@ const SpecialsSection = () => {
           <div className=' space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0'>
             {/* Card #1 */}
 
-            <div class='mx-auto lg:mx-0 w-full max-w-sm bg-neutral-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'>
+            <div class='mx-auto lg:mx-0 w-full max-w-sm bg-neutral-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 overflow-hidden'>
               <Link to='#'>
                 <img
-                  class='h-3/6 w-full object-cover pb-8 rounded-t-lg'
+                  class='h-3/6 w-full object-cover pb-8 rounded-t-lg hover:scale-105 transition duration-500'
                   src={LemonCake}
                   alt='Lemon Cake'
                 />
@@ -39,9 +39,8 @@ const SpecialsSection = () => {
                     Lemon Cake
                   </h5>
                   <p className='text-sm'>
-                    Moist and tender layers of lemon-flavored sponge cake, topped with lemon
-                    frosting made from locally sourced organic lemons. A classic delight that's both
-                    refreshing and satisfying.
+                    Moist lemon-flavored sponge cake, topped with lemon frosting made from locally
+                    sourced organic lemons. A classic delight that's both refreshing and satisfying.
                   </p>
                 </Link>
                 <div class='flex items-center mt-2.5 mb-5'>
@@ -68,10 +67,10 @@ const SpecialsSection = () => {
             </div>
 
             {/* Card #2 */}
-            <div class='mx-auto lg:mx-0 w-full max-w-sm bg-neutral-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'>
+            <div class='mx-auto lg:mx-0 w-full max-w-sm bg-neutral-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 overflow-hidden'>
               <Link to='#'>
                 <img
-                  class='h-3/6 w-full object-cover pb-8 rounded-t-lg'
+                  class='h-3/6 w-full object-cover pb-8 rounded-t-lg hover:scale-105 transition duration-500'
                   src={GreekSalad}
                   alt='Greek Salad'
                 />
@@ -110,10 +109,10 @@ const SpecialsSection = () => {
             </div>
 
             {/* Card #3 */}
-            <div class='mx-auto lg:mx-0 w-full max-w-sm bg-neutral-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'>
+            <div class='mx-auto lg:mx-0 w-full max-w-sm bg-neutral-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 overflow-hidden'>
               <Link to='#'>
                 <img
-                  class='h-3/6 w-full object-cover pb-8 rounded-t-lg'
+                  class='h-3/6 w-full object-cover pb-8 rounded-t-lg hover:scale-105 transition duration-500'
                   src={ShrimpScampi}
                   alt='Shrimp Scampi'
                 />

@@ -28,10 +28,15 @@ const NavBar = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  // Function to close mobile menu when NavLink is clicked
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
+
   return (
     <nav className='mx-auto max-w-7xl sm:px-3 md:px-6 lg:px-8'>
       <div className='relative px-6 py-4 flex justify-between items-center'>
-        <NavLink to='/'>
+        <NavLink to='/' onClick={closeMobileMenu}>
           <img className='w-60' src={Logo} alt='Little Lemon Logo' />
         </NavLink>
 
@@ -55,22 +60,22 @@ const NavBar = () => {
         {isMobileMenuOpen && (
           <ul className='lg:hidden fixed top-0 right-0 bottom-0 flex-col w-5/6 max-w-sm py-6 px-6 bg-neutral-50 border-r overflow-auto z-30'>
             <li className='mb-6'>
-              <NavLink to='/' className={mobileActive}>
+              <NavLink to='/' className={mobileActive} onClick={closeMobileMenu}>
                 Home
               </NavLink>
             </li>
             <li className='mb-6'>
-              <NavLink to='/about' className={mobileActive}>
+              <NavLink to='/about' className={mobileActive} onClick={closeMobileMenu}>
                 About
               </NavLink>
             </li>
             <li className='mb-6'>
-              <NavLink to='/menu' className={mobileActive}>
+              <NavLink to='/menu' className={mobileActive} onClick={closeMobileMenu}>
                 Menu
               </NavLink>
             </li>
             <li className='mb-6'>
-              <NavLink to='/order' className={mobileActive}>
+              <NavLink to='/order' className={mobileActive} onClick={closeMobileMenu}>
                 Order Online
               </NavLink>
             </li>
@@ -80,7 +85,8 @@ const NavBar = () => {
             <li className='mt-12'>
               <NavLink
                 to='/booking'
-                className='flex items-center justify-center p-3 text-md font-semibold bg-lemon text-black hover:bg-highlighted  rounded-xl'>
+                className='flex items-center justify-center p-3 text-md font-semibold bg-lemon text-black hover:bg-highlighted  rounded-xl'
+                onClick={closeMobileMenu}>
                 Book a Table
               </NavLink>
             </li>
